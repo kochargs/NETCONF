@@ -10,3 +10,4 @@ with manager.connect(**device, hostkey_verify=False) as m:
         if model:
             with open(f"all_yangs\{model[0]}.yang", 'w') as f:
                 f.write(str(m.get_schema(model[0])))
+                
